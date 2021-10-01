@@ -3,16 +3,20 @@ import React from 'react';
 
 // Components
 import Hero from "../components/Hero";
+import SmallAbout from "../components/SmallAbout";
+import Feachers from "../components/Feachers";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
    <>
    <Hero />
    <main>
-       <section>
-       
-       </section>
+       <SmallAbout/>
+       <hr />
+       <Feachers />
    </main>
+   <Footer />
    </>
   );
 }

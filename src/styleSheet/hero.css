@@ -1,28 +1,70 @@
 .hero {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: var(--mainTheme);
-  overflow: hidden;
+  height: 85vh;
+  background-color: cadetblue;
   position: relative;
+}
+
+.hero .heroBackground {
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  opacity: 0.1;
+  top: 0;
   z-index: 0;
 }
 
+.hero .showBox {
+  position: relative;
+  z-index: 6;
+}
 .hero .textBox {
-  margin-left: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: white;
-  z-index: 1;
 }
 .hero h1 {
-  font-size: 75px;
+  font-size: 10vw;
+}
+.hero p {
+  font-size: 2vw;
 }
 
-.hero .brookdaleMascot {
+.hero .imageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hero .phoneHomeView {
+  border-radius: 40px;
+  box-shadow: 12px 12px 10px 1px var(--shadowTheme);
+}
+.hero .imageBox .numberBox {
+  width: 120px;
+  height: 120px;
+  top: 275px;
   position: absolute;
-  top: -300px;
-  left: calc(-600px + 20vw);
-  height: 150%;
-  opacity: 0.1;
-  z-index: 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  background-color: rgba(238, 130, 238, 0);
+}
+.hero .imageBox .numberBox p {
+  margin-top: 70px;
+  font-size: 16px;
+}
+.hero .clickBoxOne {
+  margin-right: 140px;
+}
+.hero .clickBoxTwo {
+  margin-left: 140px;
 }

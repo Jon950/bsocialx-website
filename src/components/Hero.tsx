@@ -1,20 +1,46 @@
 // React
-import React from 'react';
+import React, { useState } from 'react';
 
 // CSS
 import '../styleSheet/hero.css';
 
 // Images
-import BrookdaleMascot from "../images/brookdale-community-college-mascot-logo.svg"
+import HeroBackground from "../images/cellPhone-TopDown-952414660.jpg";
+import PhoneHomeView from "../images/phoneView/inspiration-intro-BsocialX-noNumbers.png";
 
 function Hero() {
+    const [numberOfFriends, setNumberOfFriends] = useState(234);
+    const [numberOfGroups, setNumberOfGroups] = useState(31);
+
+    const countUpTo = (num:number, setNum: Function) => {
+        if(num > 999) {
+            setNum(0);
+        } else {
+            setNum(num + 1);
+        }
+    }
   return (
    <section className="hero">
-       <img src={BrookdaleMascot} alt="Brookdale mascot" className="brookdaleMascot" />
-       <div className="textBox">
-           <h1>BsocialX</h1>
-           <p>Be the First to win!</p>
+           
+       <div className="showBox">
+            <div className="textBox">
+                <h1>BsocialX</h1>
+                <p>Be the First to win!</p>
+            </div>
+            
+            <div className="imageBox">
+                <div className="numberBox clickBoxOne" onClick={() => countUpTo(numberOfFriends, setNumberOfFriends)}>
+                    <p className="numbers numberOne">{numberOfFriends}</p>
+                </div>
+
+                <div className="numberBox clickBoxTwo" onClick={() => countUpTo(numberOfGroups, setNumberOfGroups)}>
+                    <p className="numbers numberTwo">{numberOfGroups}</p>
+                </div>
+                <img src={PhoneHomeView} alt="BsocialX app on a smartphone" className="phoneHomeView" width="296" height="606" />
+                <a href="https://bsocialx.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
+            </div>
        </div>
+       <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" width="1200" height="765" />
    </section>
   );
 }

@@ -1,0 +1,20 @@
+footer {
+  width: 100vw;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: var(--mainTheme);
+}
+footer input {
+  padding: 7px;
+  border: none;
+}
+footer button {
+  padding: 7px 25px;
+  border: none;
+  font-weight: bold;
+  background-color: violet;
+}

@@ -1,0 +1,16 @@
+.smallAbout {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.smallAbout .textBox {
+  width: 300px;
+}
+
+.smallAbout .appIcon {
+  border-radius: 20px;
+  border: 1px solid var(--shadowTheme);
+  box-shadow: 12px 12px 10px 1px var(--shadowTheme);
+}
