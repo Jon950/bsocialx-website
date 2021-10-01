@@ -1,0 +1,15 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--mainTheme);
+}
+
+.hero .textBox {
+  margin-left: 150px;
+  color: white;
+}
+.hero h1 {
+  font-size: 75px;
+}
