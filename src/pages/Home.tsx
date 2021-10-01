@@ -8,6 +8,11 @@ function Home() {
   return (
    <>
    <Hero />
+   <main>
+       <section>
+       
+       </section>
+   </main>
    </>
   );
 }
