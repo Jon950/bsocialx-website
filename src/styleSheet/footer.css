@@ -18,16 +18,28 @@ footer form {
   flex-wrap: wrap;
 }
 footer input {
-  width: 203px;
+  margin: 5px 0;
   padding: 7px;
   border: none;
 }
+footer input[type="text"] {
+  width: 203px;
+}
+footer input[type="email"] {
+  width: 286px;
+}
 footer button {
   padding: 7px 25px;
+  margin: 5px 0;
+
   border: none;
   font-weight: bold;
   background-color: var(--callToActionTheme);
 }
 footer textarea {
   width: 300px;
+  min-height: 100px;
+  padding: 7px;
+
+  margin: 5px 0;
 }
