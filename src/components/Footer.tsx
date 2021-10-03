@@ -18,7 +18,7 @@ function Footer() {
            <input type="text" name="name" placeholder="Your name..." required/>
            <button type="submit" >Send</button>
            
-           <div data-netlify-recaptcha="true"></div>
+           <div data-netlify-recaptcha="true" className="recaptcha"></div>
 
            <input type="email" name="email" placeholder="Your email..." required/>
            <textarea name="message" placeholder="Your question..." required/>

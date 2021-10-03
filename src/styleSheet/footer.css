@@ -18,7 +18,6 @@ footer form {
   flex-wrap: wrap;
 }
 footer input {
-  margin: 5px 0;
   padding: 7px;
   border: none;
 }
@@ -30,16 +29,17 @@ footer input[type="email"] {
 }
 footer button {
   padding: 7px 25px;
-  margin: 5px 0;
-
   border: none;
   font-weight: bold;
   background-color: var(--callToActionTheme);
+}
+footer .recaptcha {
+  width: 300px;
+  margin: 5px 0;
 }
 footer textarea {
   width: 300px;
   min-height: 100px;
   padding: 7px;
-
   margin: 5px 0;
 }
