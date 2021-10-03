@@ -17,6 +17,8 @@ function Footer() {
        <form name="contact" method="POST" data-netlify="true">
            <input type="text" name="name" placeholder="Your name..." required/>
            <button type="submit" >Send</button>
+           
+           <div data-netlify-recaptcha="true"></div>
 
            <input type="email" name="email" placeholder="Your email..." required/>
            <textarea name="message" placeholder="Your question..." required/>
