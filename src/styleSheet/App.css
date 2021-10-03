@@ -1,0 +1,53 @@
+:root {
+  --mainTheme: #282c34;
+  --callToActionTheme: rgba(236, 58, 206, 0.753);
+  --shadowTheme: rgba(25, 25, 78, 0.2);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  color: #383f4e;
+  z-index: 0;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+}
+
+/* Buttons */
+.smallaTagBtn {
+  width: 300px;
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  border-radius: 20px;
+  background-color: var(--callToActionTheme);
+  box-shadow: 12px 12px 10px 1px var(--shadowTheme);
+  transition: 1s;
+  cursor: pointer;
+}
+
+.smallaTagBtn:hover {
+  font-size: 21px;
+  background-color: yellow;
+  box-shadow: 12px 12px 15px 5px var(--shadowTheme);
+}

@@ -1,0 +1,25 @@
+.feachersBox {
+  height: 70vh;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.feachersBox .textBox h2 {
+  font-size: 30px;
+}
+
+.feachersBox .textBox li {
+  font-size: 30px;
+}
+
+.feachersBox .phoneHomeView {
+  width: calc(10vw + 100px);
+}
+
+@media screen and (max-width: 800px) {
+  .feachersBox {
+    flex-direction: column;
+  }
+}
