@@ -1,5 +1,6 @@
 :root {
   --mainTheme: #282c34;
+  --callToActionTheme: rgba(236, 58, 206, 0.753);
   --shadowTheme: rgba(25, 25, 78, 0.2);
 }
 
@@ -39,7 +40,7 @@ main {
   text-align: center;
   color: black;
   border-radius: 20px;
-  background-color: rgba(236, 58, 206, 0.753);
+  background-color: var(--callToActionTheme);
   box-shadow: 12px 12px 10px 1px var(--shadowTheme);
   transition: 1s;
   cursor: pointer;

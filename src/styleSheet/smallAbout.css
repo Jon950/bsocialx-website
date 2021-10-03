@@ -1,12 +1,22 @@
 .smallAbout {
   height: 70vh;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
 .smallAbout .textBox {
-  width: 300px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.smallAbout .textBox h2 {
+  font-size: 30px;
+}
+
+.smallAbout .textBox p {
+  font-size: 30px;
 }
 
 .smallAbout .appIcon {

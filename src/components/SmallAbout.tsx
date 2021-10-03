@@ -9,7 +9,7 @@ import AppIcon from "../images/appIcon.jpg";
 
 function SmallAbout() {
   return (
-   <section className="smallAbout">
+   <section id="about" className="smallAbout">
 
        <div className="textBox">
            <h2>Learn about BsocialX</h2>

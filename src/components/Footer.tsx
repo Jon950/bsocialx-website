@@ -11,10 +11,13 @@ function Footer() {
   return (
    <footer>
        <h2>Just SignUp Now!</h2>
-       <a href="https://bsocialx.netlify.app" className="smallaTagBtn" >SignUp</a>
+       <a href="https://bsocialx.netlify.app" className="smallaTagBtn" >SignUp with BsocialX</a>
+
+       <h4>Have any question?</h4>
        <form onSubmit={submitQuestion}>
-           <input type="text" placeholder="Ask a question"/>
+           <input type="text" placeholder="Your name?" required/>
            <button type="submit" >Send</button>
+           <textarea placeholder="Ask a question" required/>
        </form>
    </footer>
   );

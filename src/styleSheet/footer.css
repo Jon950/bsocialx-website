@@ -1,6 +1,7 @@
 footer {
   width: 100vw;
-  height: 200px;
+  height: fit-content;
+  padding: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,7 +9,16 @@ footer {
   color: white;
   background-color: var(--mainTheme);
 }
+footer h4 {
+  padding: 10px 0;
+}
+footer form {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
 footer input {
+  width: 203px;
   padding: 7px;
   border: none;
 }
@@ -16,5 +26,8 @@ footer button {
   padding: 7px 25px;
   border: none;
   font-weight: bold;
-  background-color: violet;
+  background-color: var(--callToActionTheme);
+}
+footer textarea {
+  width: 300px;
 }

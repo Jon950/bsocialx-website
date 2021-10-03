@@ -24,7 +24,7 @@ function Hero() {
            
        <div className="showBox">
             <div className="textBox">
-                <h1>BsocialX</h1>
+                <h1>Bsocial<span className="theX">X</span></h1>
                 <p>Be the First to win!</p>
             </div>
             

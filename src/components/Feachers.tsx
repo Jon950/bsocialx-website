@@ -9,14 +9,16 @@ import PhoneHomeView from "../images/phoneView/inspiration-intro-BsocialX-noNumb
 
 function Feachers() {
   return (
-   <section className="feachersBox">
-        <img src={PhoneHomeView} alt="BsocialX app on a smartphone" className="phoneHomeView" width="296" height="606" />
+   <section id="feachers" className="feachersBox">
+        <img src={PhoneHomeView} alt="BsocialX app on a smartphone" className="phoneHomeView" />
 
        <div className="textBox">
            <h2>BsocialX feachers</h2>
-           <p>Fimd your friends</p>
-           <p>Fimd a group</p>
-           <p>Rate them all!</p>
+          <ul>
+            <li>Find your friends</li>
+            <li>Find a group</li>
+            <li>Rate them all!</li>
+          </ul>
        </div>
 
    </section>
