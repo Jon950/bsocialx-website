@@ -37,7 +37,7 @@ function Hero() {
                     <p className="numbers numberTwo">{numberOfGroups}</p>
                 </div>
                 <img src={PhoneHomeView} alt="BsocialX app on a smartphone" className="phoneHomeView" width="296" height="606" />
-                <a href="https://bsocialx.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
+                <a href="https://bsocialxapp.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
             </div>
        </div>
        <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" width="1200" height="765" />
