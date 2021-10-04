@@ -40,7 +40,7 @@ function Hero() {
                 <a href="https://bsocialxapp.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
             </div>
        </div>
-       <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" width="1200" height="765" />
+       <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" height="765" />
    </section>
   );
 }
