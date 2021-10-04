@@ -4,7 +4,6 @@
 .carousel {
   width: 100%;
   text-align: center;
-  font-size: 30px;
 }
 .carousel .card {
   width: 500px;
@@ -12,6 +11,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 100px;
-  background-color: tomato;
+}
+.carousel .card .textBox {
+  padding: 10px;
+  text-align: left;
+}
+.carousel .card h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.carousel .card p {
+  font-size: 18px;
 }
