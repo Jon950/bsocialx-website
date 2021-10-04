@@ -1,26 +1,47 @@
 .smallAbout {
-  height: 70vh;
+  height: 90vh;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.smallAbout .textBox {
+.swiper-container {
+  height: 100%;
+  text-align: center;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .textBox {
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
+  padding: 10px;
+  text-align: left;
 }
 
-.smallAbout .textBox h2 {
+.carousel .card h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel .card p {
   font-size: 30px;
 }
 
-.smallAbout .textBox p {
-  font-size: 30px;
-}
-
-.smallAbout .appIcon {
+.carousel .appIcon img {
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
   border: 1px solid var(--shadowTheme);
   box-shadow: 12px 12px 10px 1px var(--shadowTheme);
+}
+
+.carousel .phoneView img {
+  width: 250px;
+  height: 500px;
 }
