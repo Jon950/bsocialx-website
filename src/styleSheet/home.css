@@ -1,0 +1,17 @@
+.swiper-container {
+  width: 500px;
+}
+.carousel {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+.carousel .card {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  background-color: tomato;
+}
