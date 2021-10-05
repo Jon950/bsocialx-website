@@ -1,26 +1,65 @@
 .smallAbout {
-  height: 70vh;
+  height: 90vh;
   padding: 15px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
 
-.smallAbout .textBox {
+.swiper-container {
   width: 100%;
-  max-width: 600px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.smallAbout .textBox h2 {
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .textBox {
+  width: 100%;
+  max-width: 750px;
+  padding: 10px;
+  text-align: left;
+}
+
+.carousel h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.carousel p {
   font-size: 30px;
 }
 
-.smallAbout .textBox p {
-  font-size: 30px;
-}
-
-.smallAbout .appIcon {
+.carousel .appIcon img {
+  width: 200px;
+  height: 200px;
   border-radius: 20px;
   border: 1px solid var(--shadowTheme);
   box-shadow: 12px 12px 10px 1px var(--shadowTheme);
+}
+
+.carousel .phoneView img {
+  width: 250px;
+  height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel h3 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .carousel p {
+    font-size: 17px;
+  }
 }

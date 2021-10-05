@@ -8,14 +8,18 @@ import SmallAbout from "../components/SmallAbout";
 import Feachers from "../components/Feachers";
 import Footer from "../components/Footer";
 
+// CSS
+import "../styleSheet/home.css"
+
+
 function Home() {
+  
   return (
    <>
    <Header />
    <Hero />
    <main>
        <SmallAbout/>
-       <hr />
        <Feachers />
    </main>
    <Footer />
