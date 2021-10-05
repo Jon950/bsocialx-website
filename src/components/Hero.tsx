@@ -16,7 +16,7 @@ function Hero() {
         if(num > 999) {
             setNum(0);
         } else {
-            setNum(num + 1);
+            setNum((currNum: number) => currNum + 1);
         }
     }
   return (
