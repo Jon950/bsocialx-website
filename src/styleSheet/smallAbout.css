@@ -26,17 +26,17 @@
 
 .carousel .textBox {
   width: 100%;
-  max-width: 500px;
+  max-width: 750px;
   padding: 10px;
   text-align: left;
 }
 
-.carousel .card h4 {
+.carousel h3 {
   font-size: 30px;
   font-weight: bold;
 }
 
-.carousel .card p {
+.carousel p {
   font-size: 30px;
 }
 
@@ -51,4 +51,15 @@
 .carousel .phoneView img {
   width: 250px;
   height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel h3 {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .carousel p {
+    font-size: 17px;
+  }
 }
