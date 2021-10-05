@@ -3,6 +3,7 @@ import React from 'react';
 
 // Swiper
 import {Swiper, SwiperSlide} from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
 
 // CSS
@@ -15,6 +16,7 @@ import PhoneHomeView from  "../images/phoneView/inspiration-intro-BsocialX.png";
 import PhoneFriendView from  "../images/phoneView/inspiration-intro-BsocialX-table.png";
 
 function SmallAbout() {
+  SwiperCore.use([Autoplay]);
   const items = [
     {id: "1", title: "Learn about BsocialX", details: "A simplified way to rate your friends and find new ones.", url: AppIcon, altTag: "Brookdale mascot", className: "appIcon"},
     {id: "2", title: "Sign in with Google!", details: "Use your Google account to sign in to the BsocialX app. To sign in just click Sign in with Google. If you don't have an account with BsocialX, just click Sign in with Google it will make one for you. You won't have to remember individual usernames and passwords for each account.", url: PhoneSignInView, altTag: "BsocialX sign in page", className: "phoneView"},
@@ -29,8 +31,15 @@ function SmallAbout() {
        tag="section" 
        wrapperTag="ul" 
        className="carousel"
-       spaceBetween={50}
+       spaceBetween={200}
        slidesPerView={1}
+       loop={true}
+       autoplay={{
+        delay: 2000,
+        disableOnInteraction: false
+      }}
+      speed={3000}
+      slidesOffsetBefore={-20}
       pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}>
 
