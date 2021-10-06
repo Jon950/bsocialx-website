@@ -11,7 +11,7 @@ function Footer() {
   return (
    <footer>
        <h2>Just SignUp Now!</h2>
-       <a href={process.env.BsocialXAppVersionLink} className="smallaTagBtn" >SignUp with BsocialX</a>
+       <a href="https://bsocialx-beta.netlify.app" className="smallaTagBtn" >SignUp with BsocialX</a>
 
        <h4>Have any questions?</h4>
        <form name="contact" method="POST" data-netlify="true">
