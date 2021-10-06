@@ -5,11 +5,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url("../images/phoneView/inspiration-intro-BsocialX-noNumbers.png"); */
+  background-image: url("../images/phoneView/inspiration-intro-BsocialX-Blank.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 3px solid rgb(189, 7, 134);
+  overflow: hidden;
 }
 
 .userProfile {
@@ -22,7 +22,11 @@
   justify-content: center;
   color: white;
   font-weight: bold;
-  background-color: var(--mainTheme);
+  background-color: var(--userTheme);
+}
+.userProfile img {
+  width: 160px;
+  border-radius: 50%;
 }
 
 .userName {
@@ -35,7 +39,15 @@
 }
 
 .starRating {
+  padding: 5px 0;
   color: white;
+}
+.starRating span {
+  padding: 0 5px;
+}
+
+.starRating .icon {
+  padding: 0 5px;
 }
 
 .numberBoxs {
@@ -59,7 +71,7 @@
   -khtml-user-select: none; /* Konqueror HTML */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
-  background-color: var(--mainTheme);
+  background-color: var(--userTheme);
 }
 .numberBox .icon {
   border-radius: 50%;

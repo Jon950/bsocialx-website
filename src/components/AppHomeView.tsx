@@ -1,5 +1,5 @@
 // React
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 // CSS
 import '../styleSheet/appHomeView.css';
@@ -8,42 +8,44 @@ import '../styleSheet/appHomeView.css';
 import {FaUserFriends} from "react-icons/fa";
 import {BiNetworkChart} from "react-icons/bi";
 
-function AppHomeView() {
-    const [numberOfFriends, setNumberOfFriends] = useState(234);
-    const [numberOfGroups, setNumberOfGroups] = useState(31);
+//  Components
+import StarRatingBar from './StarRatingBar';
 
-    const countUpTo = (num:number, setNum: Function) => {
-        if(num > 999) {
-            setNum(0);
-        } else {
-            setNum((currNum: number) => currNum + 1);
-        }
+function AppHomeView() {
+    const [user, setUser] = useState({picture: {large: ""}, name: {first: "", last: ""}, dob: {age: 0}});
+
+    const setNewUser = () => {
+        fetch('https://randomuser.me/api/').then((users) => users.json().then((user) => setUser(user.results[0])));
     }
+
+    useEffect(() => {
+        fetch('https://randomuser.me/api/').then((users) => users.json().then((user) => setUser(user.results[0])));
+    },[])
 
   return (
    <div className="appHomeView">
-       <div className="userProfile">
-           <p>J</p>
+       <div className="userProfile" onClick={setNewUser}>
+       <img src={user.picture.large} alt="Foo eating a sandwich." />
        </div>
 
        <div className="userName">
-           <p>Jon M.</p>
+           <p>{user.name.first} {user.name.last}</p>
        </div>
 
        <div className="starRating">
-           <p>* * * * *</p>
+           <StarRatingBar  numberOfStars={user.dob.age / 15}/>
        </div>
        
        <div className="numberBoxs">
-            <div className="numberBox clickBoxOne" onClick={() => countUpTo(numberOfFriends, setNumberOfFriends)}>
+            <div className="numberBox clickBoxOne">
                 <FaUserFriends size={30} className="icon"/>
-                <p>{numberOfFriends}</p>
+                <p>{user.dob.age * 6}</p>
                 <p>Friends</p>
             </div>
 
-            <div className="numberBox clickBoxTwo" onClick={() => countUpTo(numberOfGroups, setNumberOfGroups)}>
+            <div className="numberBox clickBoxTwo">
                 <BiNetworkChart  size={30} className="icon"/>
-                <p>{numberOfGroups}</p>
+                <p>{user.dob.age}</p>
                 <p>Groups</p>
             </div>
        </div>

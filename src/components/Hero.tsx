@@ -6,7 +6,6 @@ import '../styleSheet/hero.css';
 
 // Images
 import HeroBackground from "../images/cellPhone-TopDown-952414660.jpg";
-// import PhoneHomeView from "../images/phoneView/inspiration-intro-BsocialX-noNumbers.png";
 
 // Components
 import AppHomeView from './AppHomeView';
@@ -23,18 +22,9 @@ function Hero() {
             </div>
 
             <AppHomeView />
-            
-            {/* <div className="imageBox">
-                <div className="numberBox clickBoxOne" onClick={() => countUpTo(numberOfFriends, setNumberOfFriends)}>
-                    <p className="numbers numberOne">{numberOfFriends}</p>
-                </div>
-
-                <div className="numberBox clickBoxTwo" onClick={() => countUpTo(numberOfGroups, setNumberOfGroups)}>
-                    <p className="numbers numberTwo">{numberOfGroups}</p>
-                </div>
-                <img src={PhoneHomeView} alt="BsocialX app on a smartphone" className="phoneHomeView" width="296" height="606" />
+            <div className="smallaTagBtnBox">
                 <a href="https://bsocialxapp.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
-            </div> */}
+            </div>
        </div>
        <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" height="765" />
    </section>

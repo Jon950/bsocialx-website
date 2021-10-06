@@ -41,3 +41,12 @@
   border-radius: 40px;
   box-shadow: 12px 12px 10px 1px var(--shadowTheme);
 }
+
+.smallaTagBtnBox {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+.smallaTagBtn {
+  margin: 0 auto;
+}
