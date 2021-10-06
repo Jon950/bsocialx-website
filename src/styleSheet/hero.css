@@ -33,13 +33,6 @@
   font-size: 2vw;
 }
 
-.hero .imageBox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
 .hero .showBox .textBox .theX {
   color: var(--callToActionTheme);
 }
@@ -47,30 +40,4 @@
 .hero .phoneHomeView {
   border-radius: 40px;
   box-shadow: 12px 12px 10px 1px var(--shadowTheme);
-}
-.hero .imageBox .numberBox {
-  width: 120px;
-  height: 120px;
-  top: 275px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  color: white;
-  cursor: pointer;
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
-  background-color: rgba(238, 130, 238, 0);
-}
-.hero .imageBox .numberBox p {
-  margin-top: 70px;
-  font-size: 16px;
-}
-.hero .clickBoxOne {
-  margin-right: 140px;
-}
-.hero .clickBoxTwo {
-  margin-left: 140px;
 }
