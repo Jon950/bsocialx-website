@@ -23,7 +23,7 @@ function Hero() {
 
             <AppHomeView />
             <div className="smallaTagBtnBox">
-                <a href={process.env.BsocialXAppVersionLink} className="smallaTagBtn">Sign Up with BsocialX</a>
+                <a href="https://bsocialxa-beta.netlify.app" className="smallaTagBtn">Sign Up with BsocialX</a>
             </div>
        </div>
        <img src={HeroBackground} alt="College students in a circle on cell phones" className="heroBackground" height="765" />

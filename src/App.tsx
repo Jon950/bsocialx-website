@@ -14,6 +14,7 @@ import Home from "./pages/Home"
 
 
 function App() {
+  console.log("BsocialXAppVersionLink",process.env.BsocialXAppVersionLink);
   return (
     <Router>
       <Switch>
