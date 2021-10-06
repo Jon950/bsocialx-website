@@ -1,5 +1,6 @@
 :root {
   --mainTheme: #282c34;
+  --userTheme: #404b61;
   --callToActionTheme: rgba(236, 58, 206, 0.753);
   --shadowTheme: rgba(25, 25, 78, 0.2);
   scroll-behavior: smooth;

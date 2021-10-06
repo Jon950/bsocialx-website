@@ -62,4 +62,14 @@
   .carousel p {
     font-size: 17px;
   }
+
+  .carousel .appIcon img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel .phoneView img {
+    width: 150px;
+    height: 200px;
+  }
 }
