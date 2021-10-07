@@ -13,7 +13,7 @@ function Footer() {
        <h2>Just SignUp Now!</h2>
        <a href="https://bsocialx-beta.netlify.app" className="smallaTagBtn" >SignUp with BsocialX</a>
 
-       <h4>Have any questions?</h4>
+       {/* <h4>Have any questions?</h4>
        <form name="contact" method="POST" data-netlify="true">
            <input type="text" name="name" placeholder="Your name..." required/>
            <button type="submit" >Send</button>
@@ -22,7 +22,7 @@ function Footer() {
 
            <input type="email" name="email" placeholder="Your email..." required/>
            <textarea name="message" placeholder="Your question..." required/>
-       </form>
+       </form> */}
    </footer>
   );
 }
